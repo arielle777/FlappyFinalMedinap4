@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 public class GameControl : MonoBehaviour
 {
     public GameObject gameOverText;
+    public TextMeshProUGUI ScriptTest;
     public bool gameOver = false;
     public static GameControl instance;
+    public float scrollspeed = -1.5f;
 
     // Start is called before the first frame update
     void Awake()
