@@ -21,7 +21,7 @@ public class GameControl : MonoBehaviour
         {
             instance = this;
         }
-        else if (instance !=this)
+        else if (instance != this)
         {
             Destroy(gameObject);
         }
@@ -32,7 +32,7 @@ public class GameControl : MonoBehaviour
     {
         if (gameOver == true && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
         }
     }
     public void BirdScored()
