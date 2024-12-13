@@ -8,8 +8,8 @@ using UnityEngine.UI;
 public class GameControl : MonoBehaviour
 {
     public GameObject gameOverText;
-    public Text scoreText;
-    public TextMeshProUGUI ScriptTest;
+    public TextMeshProUGUI scoreText;
+    
     public bool gameOver = false;
     public static GameControl instance;
     public float scrollspeed = -1.5f;
@@ -42,7 +42,7 @@ public class GameControl : MonoBehaviour
             return;
         }
         score++;
-        scoreText.text = "Score: " + score.ToString ();
+        scoreText.text = $"Score: {score}";
     }
     public void BirdDied()
     {
